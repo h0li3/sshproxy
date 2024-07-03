@@ -646,7 +646,7 @@ static int ssh_login(LIBSSH2_SESSION* session, const char* username, const char*
         }
     }
 
-    rc = LIBSSH2_ERROR_AUTHENTICATION_FAILED;
+    return LIBSSH2_ERROR_AUTHENTICATION_FAILED;
 
 auth_ok:
     return 0;
